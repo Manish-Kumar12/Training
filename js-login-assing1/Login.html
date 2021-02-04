@@ -1,0 +1,50 @@
+<html>
+<head>    
+<title>login</title>
+<Script Language="JavaScript">
+function FormCheck()
+{
+    x=document.f1.n1.value; /*Name valid*/
+    if(x=="")
+    {
+        alert("Please Enter the Name");
+        document.f1.n1.focus();
+        return false;
+    }
+    
+    x=document.f1.p1.value; /*password valid*/
+    if(x=="")
+    {
+        alert("Enter The Password");
+        document.f1.p1.focus();
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body style="background-color: darkgrey;">
+    <center>
+        <h1 STYLE="color: blueviolet; font-size: 50px;">FORM validation</h1>
+    </center>
+    <form name="f1" method="get" onsubmit="return FormCheck()">
+    <form>
+        <table align="center">
+            <tr>
+                <td>Name:-
+                <td><input type="text" name="n1" size="20" value="">
+            </tr>
+            <br>
+            <tr>
+                <td>Password:-
+                <td><input type="Password" name="p1" size="20" value="">
+            </tr>
+            <tr><tr></tr><tr></tr><tr></tr><tr></tr>
+            <tr><td><td><br><br>
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
