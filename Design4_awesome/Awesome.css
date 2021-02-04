@@ -1,0 +1,291 @@
+/*BODY*/
+*
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+/*GREEN BOX AREA*/
+.header
+{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(101, 206, 2);
+}
+.header-items
+{
+    border: 1px solid black;
+}
+/*HEADER NAME*/
+.name
+{
+    float:left;
+    color: white;
+    font-size: 22px;
+    line-height: 60px;
+    padding: 0 120px;
+}
+/*HEADER MENU BAR*/
+.menu-bar ul
+{
+    float:right;
+    margin-right: 120px;
+}
+.menu-bar ul li
+{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 8px;
+}
+.menu-bar ul li a
+{
+    color: white;
+    font-size: 15px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.active
+{
+    background-color:rgb(67, 149, 0);
+    padding: 10px 10px;
+    color:white;
+}
+
+a:active, a:hover
+{
+  background-color:rgb(67, 149, 0);
+}
+
+/*HEADER CONTENT*/
+.content
+{
+    margin-top: 160px;
+}
+.content h1
+{
+    text-align: center;
+    color:white;
+    font-size: 70px;
+}
+.content p
+{
+    text-align: center;
+    color:white;
+    letter-spacing: 1px;
+}
+
+/*FEATURES SECTION*/
+.Features
+{
+    /*border:1px solid black;*/
+    margin-bottom: 50px;
+}
+.Features h1
+{
+    margin-top: 60px;
+    font-size: 50px;
+    text-align: center;
+    color:rgb(125, 128, 133);
+}
+.Features h1:after
+{
+    content: '';
+    background:rgb(101, 206, 2);
+    display: block;
+    width: 180px;
+    height: 3px;
+    margin: 13px auto;
+}
+
+/*FEATURES BOX*/
+.Features-box 
+{
+  margin: 5px;
+  color:rgb(125, 128, 133);
+  /*border: 1px solid black;*/
+  float: left;
+  width: 180px;
+  margin-left: 120px;
+}
+.Features-box h3 
+{
+    color: rgb(70, 100, 105);
+    margin-bottom: 8px;
+}
+
+div.about {
+  padding:20px 5px;
+  text-align: center;
+}
+.Features-box .fa
+{
+    margin-left: 70px;
+    margin-bottom: -10px;
+    font-size: 40px;
+    color:rgb(101, 206, 2)
+}
+
+/*MONITOR BOX*/
+.monitor
+{
+    width: 100%;
+    height: 500px;
+    background-color:rgb(248, 248, 248);
+    /*border: 1px solid black;*/
+    margin-top: 350px;
+}
+/*LEFT SIDE*/
+.screen
+{
+    width: 50%;
+    float: left;
+    /*border: 1px solid red;*/
+}
+.screen .fa
+{
+    font-size: 500px;
+    margin-left: 50px;
+}
+
+/*RIGHT SIDE*/
+.rocket
+{
+    width: 50%;
+    float: right;
+    /*border: 1px solid black;*/
+    padding:15px;
+    margin-top: 100px;
+}
+.rocket .fa
+{
+    /*background-color:rgb(101, 206, 2);*/
+    border-radius: 100px;
+    font-size: 35px;
+    /*color: white;*/
+    color: green;
+}
+.rocket p
+{
+    /*color:rgb(125, 128, 133)*/
+    color:gray;
+    text-align:justify;
+    margin-left: 50px;
+    /*margin-top: -20px;*/
+}
+.rocket h3
+{
+    color: gray;
+    margin-left: 50px;
+    margin-top: -40px;
+}
+
+/*SERVICE SECTION*/
+.service h1
+{
+    margin-top: 60px;
+    font-size: 50px;
+    text-align: center;
+    color:rgb(125, 128, 133);
+}
+.service h1:after
+{
+    content: '';
+    background:rgb(101, 206, 2);
+    display: block;
+    width: 180px;
+    height: 3px;
+    margin: 13px auto;
+    margin-bottom: 20px;
+}
+
+/*SERVICE BOX*/
+.service-box 
+{
+  margin: 0px;
+  background-color:rgb(250, 250, 250);
+  /*border: 1px solid black;*/
+  float: left;
+  width: 380px;
+  margin-left: 115px;
+  margin-right: -120px;
+  /*margin-bottom: 50px;*/
+}
+.service-box h3 
+{
+    color: rgb(52, 52, 52);
+    margin-bottom: 8px;
+}
+
+div.about {
+  padding:20px 5px;
+  text-align: center;
+}
+.service-box .fa
+{
+    margin-left: 170px;
+    margin-bottom: -10px;
+    font-size: 40px;
+    color:rgb(52, 52, 52);
+    margin-top: 20px;
+    
+}
+
+/*TESTINOMIAL SECTION*/
+.test
+{
+    width: 100%;
+    height:300px;
+    margin-top: 420px;
+    background-color: rgb(101, 206, 2);
+    /*margin-bottom: 50px;*/   
+}
+.test h1
+{
+    /*margin-top: 20px;*/
+    padding-top: 30px;
+    margin-bottom: -20px;
+    font-size: 50px;
+    text-align: center;
+    color:white;
+}
+.test h1:after
+{
+    content: '';
+    background:white;
+    display: block;
+    width: 180px;
+    height: 3px;
+    margin: 20px auto;
+}
+.test p
+{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/*FOOTER SECTION*/
+.social-media
+{
+    width:100%;
+    height:150px;
+    text-align: center;
+    margin-top: 60px;
+}
+.social-media .icon .fa
+{   
+    font-size: 25px;
+    color: rgb(125, 128, 133);
+}
+.social-media .icon h5
+{
+    padding-left: 100px;
+    color: rgb(125, 128, 133);
+}
+span
+{
+    color:rgb(77, 87, 112)
+}

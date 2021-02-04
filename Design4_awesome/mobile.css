@@ -1,0 +1,67 @@
+@media screen and (max-width:600px)
+{
+    /*BODY*/
+    *
+    {
+        margin:0;
+        padding: 0;
+    }
+    /*GREEN BOX AREA*/
+    .name
+    {
+        padding-left: 50px;
+    }
+    .menu-bar ul
+    {
+        display: none;
+    }
+    .content
+    {
+        padding: 10px;
+    }
+    .content h1
+    {
+        font-size: 50px;
+    }
+    /*FEATURES SECTION*/
+    .Features-box
+    {
+        margin-left: 220px;
+        /*margin-left: 140px;*/
+
+    }
+    /*MONITOR BOX*/
+    .monitor
+    {
+        margin-top: 1000px;
+        height: 850px;
+    }
+    .screen .fa
+    {
+        font-size: 350px;
+        margin-left: 120px;
+    }
+    .rocket
+    {
+        margin-top: -10px;
+        margin-right: 150px;
+        
+    }
+    /*SERVICE SECTION*/
+    .service
+    {
+        /*margin-top: 370px;*/
+        margin-top: -50px;
+    }
+    .service-box
+    {
+        /*margin-left:-1px;*/
+        margin-left: 110px;
+    }
+    /*TESTINOMIAL SECTION*/
+    .test
+    {
+        margin-top: 1100px;
+        padding: 10px;
+    }
+}
