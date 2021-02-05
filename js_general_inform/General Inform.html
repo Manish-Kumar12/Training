@@ -1,0 +1,174 @@
+<html>
+<head>    
+        <title>General Information</title>
+        <link rel="stylesheet" href="General.css">
+<Script Language="JavaScript">
+function Check()
+{
+    x=document.general.start.value;
+    if(x=="")
+    {
+        alert("Please Enter Title");
+        document.general.start.focus();
+        return false;
+    }
+    x=document.general.first.value;
+    if(x=="")
+    {
+        alert("Please Enter First Name");
+        document.general.first.focus();
+        return false;
+    }
+    x=document.general.last.value;
+    if(x=="")
+    {
+        alert("Please Enter Last Name");
+        document.general.last.focus();
+        return false;
+    }
+    x=document.general.position.value;
+    if(x=="")
+    {
+        alert("Please Enter Position");
+        document.general.position.focus();
+        return false;
+    }
+    x=document.general.company.value;
+    if(x=="")
+    {
+        alert("Please Enter Company");
+        document.general.company.focus();
+        return false;
+    }
+    x=document.general.business.value;
+    if(x=="")
+    {
+        alert("Please Enter Business");
+        document.general.business.focus();
+        return false;
+    }
+    x=document.general.emp.value;
+    if(x=="")
+    {
+        alert("Please Enter Employee");
+        document.general.emp.focus();
+        return false;
+    }
+    x=document.general.street.value;
+    if(x=="")
+    {
+        alert("Please Enter Street");
+        document.general.street.focus();
+        return false;
+    }
+    x=document.general.add.value;
+    if(x=="")
+    {
+        alert("Please Enter Additonal Information");
+        document.general.add.focus();
+        return false;
+    }
+    x=document.general.zip.value;
+    if(x=="")
+    {
+        alert("Please Enter Zip Code");
+        document.general.zip.focus();
+        return false;
+    }
+    x=document.general.place.value;
+    if(x=="")
+    {
+        alert("Please Enter Place");
+        document.general.place.focus();
+        return false;
+    }
+    x=document.general.country.value;
+    if(x=="")
+    {
+        alert("Please Enter Country");
+        document.general.country.focus();
+        return false;
+    }
+    x=document.general.code.value;
+    if(x=="")
+    {
+        alert("Please Enter Code");
+        document.general.code.focus();
+        return false;
+    }
+    x=document.general.phone.value;
+    if(x=="")
+    {
+        alert("Please Enter Phone Number");
+        document.general.phone.focus();
+        return false;
+    }
+    x=document.general.email.value;
+    if(x=="")
+    {
+        alert("Please Enter Email");
+        document.general.email.focus();
+        return false;
+    }
+    
+    return false;
+}
+</script>
+</head>
+<body>
+    <form name="general" method="get" onsubmit="return Check()">
+        <div class="back">
+            <div class="left">  
+                <h3>General Information</h3>
+                
+                    <div class="title">
+                        <input class="input" placeholder="Title" type="text" name="start" size="45" value="">
+                    </div>
+                    <div class="input-box">
+                        <input class="input" placeholder="First Name" type="text" name="first" value=""> 
+                        <input class="input" placeholder="Last Name" type="text" name="last" value=""> 
+                    </div>
+                    <div class="title">
+                        <input class="input" placeholder="Position" type="text" name="position" size="45" value="">
+                    </div>
+                    <div class="title">
+                        <input class="input" placeholder="Company" type="text" name="company" size="45" value="">
+                    </div>
+                    <div class="input-box">
+                        <input class="input" placeholder="Business Arena" type="text" name="business" value=""> 
+                        <input class="input" placeholder="Employees" type="text" name="emp" value=""> 
+                    </div>
+            </div>
+            
+            <div class="right">
+                <h3>Contact Detail</h3>
+                <div class="title">
+                    <input class="input" placeholder="Street + Nr" type="text" name="street" size="45" value="">
+                </div>
+                <div class="title">
+                    <input class="input" placeholder="Additional Information" type="text" name="add" size="45" value="">
+                </div>
+                <div class="input-box">
+                    <input class="input" placeholder="Zip Code" type="number" name="zip" size="10" value=""> 
+                    <input class="input" placeholder="Place" type="text" name="place" size="20" value=""> 
+                </div>
+                <div class="title">
+                    <input class="input" placeholder="Country" type="text" name="country" size="45" value="">
+                </div>
+                <div class="input-box">
+                    <input class="input" placeholder="Code +" type="number" name="code" size="10" value=""> 
+                    <input class="input" placeholder="Phone Number" type="number" name="phone" size="20" value=""> 
+                </div>
+                <div class="title">
+                    <input class="input" placeholder="Your Email" type="text" name="email" size="45" value="">
+                </div><br>
+                    <div class="line">
+                    <input type="radio" name="accept" value="">
+                        I do Accept the <span>Terms and condition</span> of your Site.<br><br>
+                    </div>
+                    <input class="button" type="submit" value="Register Badge">
+                    
+            </div>
+    </form>
+</body>
+</html>
