@@ -5,13 +5,25 @@
 <Script Language="JavaScript">
 function Check()
 {
-    x=document.general.start.value;
+    /*x=document.general.start.value;
     if(x=="")
     {
         alert("Please Enter Title");
         document.general.start.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Title Must Have Alphabets Only");
+            document.general.start.value="";
+            document.general.start.focus();
+            return false;
+        }
+    }*/
+
     x=document.general.first.value;
     if(x=="")
     {
@@ -19,6 +31,18 @@ function Check()
         document.general.first.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("First Name Must Have Alphabets Only");
+            document.general.first.value="";
+            document.general.first.focus();
+            return false;
+        }
+    }
+
     x=document.general.last.value;
     if(x=="")
     {
@@ -26,6 +50,18 @@ function Check()
         document.general.last.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Last Name Must Have Alphabets Only");
+            document.general.last.value="";
+            document.general.last.focus();
+            return false;
+        }
+    }
+
     x=document.general.position.value;
     if(x=="")
     {
@@ -33,6 +69,18 @@ function Check()
         document.general.position.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Position Must Have Alphabets Only");
+            document.general.position.value="";
+            document.general.position.focus();
+            return false;
+        }
+    }
+
     x=document.general.company.value;
     if(x=="")
     {
@@ -40,6 +88,18 @@ function Check()
         document.general.company.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Company Name Must Have Alphabets Only");
+            document.general.company.value="";
+            document.general.company.focus();
+            return false;
+        }
+    }
+
     x=document.general.business.value;
     if(x=="")
     {
@@ -47,6 +107,18 @@ function Check()
         document.general.business.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Business Detail Must Have Alphabets Only");
+            document.general.business.value="";
+            document.general.business.focus();
+            return false;
+        }
+    }
+
     x=document.general.emp.value;
     if(x=="")
     {
@@ -54,6 +126,18 @@ function Check()
         document.general.emp.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Employee Detail Must Have Alphabets Only");
+            document.general.emp.value="";
+            document.general.emp.focus();
+            return false;
+        }
+    }
+
     x=document.general.street.value;
     if(x=="")
     {
@@ -61,6 +145,7 @@ function Check()
         document.general.street.focus();
         return false;
     }
+    
     x=document.general.add.value;
     if(x=="")
     {
@@ -68,6 +153,18 @@ function Check()
         document.general.add.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Information Must Have Alphabets Only");
+            document.general.add.value="";
+            document.general.add.focus();
+            return false;
+        }
+    }
+
     x=document.general.zip.value;
     if(x=="")
     {
@@ -75,6 +172,18 @@ function Check()
         document.general.zip.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(!(y>=0&&y<=47||y>=58&&y<=255))
+       {
+            alert("Code Must Have Digit Only");
+            document.general.zip.value="";
+            document.general.zip.focus();
+            return false;
+        }
+    }
+
     x=document.general.place.value;
     if(x=="")
     {
@@ -82,6 +191,18 @@ function Check()
         document.general.place.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Place Name Must Have Alphabets Only");
+            document.general.place.value="";
+            document.general.place.focus();
+            return false;
+        }
+    }
+
     x=document.general.country.value;
     if(x=="")
     {
@@ -89,6 +210,18 @@ function Check()
         document.general.country.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y>=0&&y<=64||y>=91&&y<=96||y>=124&&y<=255)
+        {
+            alert("Country Name Must Have Alphabets Only");
+            document.general.Country.value="";
+            document.general.Country.focus();
+            return false;
+        }
+    }
+
     x=document.general.code.value;
     if(x=="")
     {
@@ -96,6 +229,18 @@ function Check()
         document.general.code.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(!(y>=0&&y<=47||y>=58&&y<=255))
+       {
+            alert("Code Must Have Digit Only");
+            document.general.code.value="";
+            document.general.code.focus();
+            return false;
+        }
+    }
+
     x=document.general.phone.value;
     if(x=="")
     {
@@ -103,12 +248,76 @@ function Check()
         document.general.phone.focus();
         return false;
     }
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(!(y>=0&&y<=47||y>=58&&y<=255))
+       {
+            alert("Phone Number Must Have Digit Only");
+            document.general.phone.value="";
+            document.general.phone.focus();
+            return false;
+        }
+    }
+
     x=document.general.email.value;
     if(x=="")
     {
         alert("Please Enter Email");
         document.general.email.focus();
         return false;
+    }
+    z=0;
+    for(i=0;i<x.length;i++)
+    {
+        y=x.charAt(i);
+        if(y=='@')
+        {
+            z=1;
+            break;
+        }
+    }
+    if(z==0)
+    {
+        alert("Invalid E-mail ID ");
+        document.general.email.value="";
+        document.general.email.focus();
+        return false;
+    }
+    else
+    {
+        for(;i<x.length;i++)
+        {
+            y=x.charAt(i);
+            if(y=='.')
+            {
+                z=1;
+                break;
+            }
+        }
+        if(z==0)
+        {
+            alert("E-mail ID Must Have special character");
+            document.general.email.value="";
+            document.general.email.focus();
+            return false;
+        }
+    }
+
+    /*x=document.general.accept.value;
+    if(x=="")
+    {
+        alert("Accept Private Policy");
+        document.general.accept.focus();
+        return false;
+    }*/
+    function submitRadioButton()
+    {
+        var acc=document.forms["general"]["accept"]
+        if(acc[0].checked==false&&acc[1].checked==false)
+        {
+            alert("Please Accept Policy")
+        }
     }
     
     return false;
@@ -119,29 +328,43 @@ function Check()
     <form name="general" method="get" onsubmit="return Check()">
         <div class="back">
             <div class="left">  
-                <h3>General Information</h3>
+                <h3>General Information</h3><br>
                 
                     <div class="title">
-                        <input class="input" placeholder="Title" type="text" name="start" size="45" value="">
+                        <select class="input" value="title">
+                            <option value="title">Mr.</option>
+                            <option value="title">Mrs.</option>
+                        </select>
                     </div>
+                    
                     <div class="input-box">
                         <input class="input" placeholder="First Name" type="text" name="first" value=""> 
                         <input class="input" placeholder="Last Name" type="text" name="last" value=""> 
                     </div>
                     <div class="title">
-                        <input class="input" placeholder="Position" type="text" name="position" size="45" value="">
+                        <select class="input" value="position">
+                            <option value="position">Select Position</option>
+                            <option value="position">CEO</option>
+                            <option value="position">Director</option>
+                            <option value="position">Manager</option>
+                        </select>
                     </div>
                     <div class="title">
                         <input class="input" placeholder="Company" type="text" name="company" size="45" value="">
                     </div>
                     <div class="input-box">
                         <input class="input" placeholder="Business Arena" type="text" name="business" value=""> 
-                        <input class="input" placeholder="Employees" type="text" name="emp" value=""> 
+                        <select class="input" id="short" value="Employees">
+                            <option value="Employees">Select Employees</option>
+                            <option value="Employees">Senior</option>
+                            <option value="Employees">Junior</option>
+                            <option value="Employees">Helper</option>
+                        </select> 
                     </div>
             </div>
             
             <div class="right">
-                <h3>Contact Detail</h3>
+                <h3>Contact Detail</h3><br>
                 <div class="title">
                     <input class="input" placeholder="Street + Nr" type="text" name="street" size="45" value="">
                 </div>
@@ -150,10 +373,20 @@ function Check()
                 </div>
                 <div class="input-box">
                     <input class="input" placeholder="Zip Code" type="number" name="zip" size="10" value=""> 
-                    <input class="input" placeholder="Place" type="text" name="place" size="20" value=""> 
+                    <select class="input" id="short" value="Place">
+                        <option value="Place">Select Place</option>
+                        <option value="Place">Patna</option>
+                        <option value="Place">Goa</option>
+                        <option value="Place">Delhi</option>
+                    </select> 
                 </div>
                 <div class="title">
-                    <input class="input" placeholder="Country" type="text" name="country" size="45" value="">
+                    <select class="input" value="country">
+                        <option value="country">Select Country</option>
+                        <option value="country">India</option>
+                        <option value="country">Australia</option>
+                        <option value="country">China</option>
+                    </select>
                 </div>
                 <div class="input-box">
                     <input class="input" placeholder="Code +" type="number" name="code" size="10" value=""> 
@@ -162,11 +395,12 @@ function Check()
                 <div class="title">
                     <input class="input" placeholder="Your Email" type="text" name="email" size="45" value="">
                 </div><br>
-                    <div class="line">
-                    <input type="radio" name="accept" value="">
+
+                <div class="line">
+                        <input type="radio" name="accept" value="">
                         I do Accept the <span>Terms and condition</span> of your Site.<br><br>
-                    </div>
-                    <input class="button" type="submit" value="Register Badge">
+                </div>
+                    <input class="button" name="accept" type="submit" value="Register Badge" onClick="submitRadioButton()">
                     
             </div>
     </form>
