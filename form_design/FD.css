@@ -1,0 +1,57 @@
+body
+{
+ background-color:pink;
+}
+.left
+{
+    background-color: white;
+    width:35%;
+    height:400px;
+    float:left;
+}
+.right
+{
+    background-color:rgb(255, 66, 106);
+    width:35%;
+    height:400px;
+    float:left;
+}
+.box
+{
+    height: 400px;
+    /*width: 100%;*/
+    margin-top: 100px;
+    margin-left: 300px;
+}
+h1
+{
+    font-size: 30px;
+    font-style: normal;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.input
+{
+    border: 0;
+    border-bottom: 2px solid gray;
+    width:100%;
+    /*margin-right: 80px;*/
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.button
+{  
+        color:black;
+        font-weight: bold;
+        border-radius:15px;
+        border: 0;
+        background-color:rgb(255, 66, 106);
+        padding:  8px 25px;
+        margin-right: 100px;
+    
+}
+#screen
+{
+    background-color:rgb(255, 66, 106);
+    border:0;
+}
