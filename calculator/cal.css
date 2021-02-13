@@ -12,12 +12,12 @@
     {
         font-size: 32px;
     }
-    button
+    /*button
     {
         height: 50px;
         width: 69px;
         font-size: 25px;
-    }
+    }*/
     h1
     {
         color:blueviolet;
@@ -28,5 +28,8 @@
         width:280px;  
     }
     
-    
+.btn
+{
+    color:red
+};    
     

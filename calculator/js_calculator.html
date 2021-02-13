@@ -4,46 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="cal.js">
+    <!--<link rel="stylesheet" href="cal.js">-->
     <link rel="stylesheet" href="cal.css">
 </head>
 
 <body>
     <div class="container">
+    <form class="calculatorForm" name="calculatorForm">
         <h1>Calculator</h1>
-        <input type="text" name="screen" id="screen">
-        <table>
-            <tr>
-                <td><button>(</button></td>
-                <td><button>)</button></td>
-                <td><button>C</button></td>
-                <td><button>/</button></td>
-            </tr>
-            <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>*</button></td>
-            </tr>
-            <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>-</button></td>
-            </tr>
-            <tr>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
-                <td><button>+</button></td>
-            </tr>
-            <tr>
-                <td><button>00</button></td>
-                <td><button>0</button></td>
-                <td><button>.</button></td>
-                <td><button>=</button></td>
-            </tr>
-        </table>
+        <div class="screen">
+            <input type="text" name="screen" class="screen" value="" readonly/>
+        </div>
+        <div class="btn">
+            <table>
+                <tr>
+                    <td><input type="button" name="curly" value="(" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="curly" value=")" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="clear" value="C" onclick="calculatorForm.screen.value='' "/></td>
+                    <td><input type="button" name="divide" value="/" onclick="valueButton(this)"/></td>                
+                </tr>
+                <tr>
+                    <td><input type="button" name="seven" value="7" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="eight" value="8" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="nine" value="9" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="mul" value="*" onclick="valueButton(this)"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="four" value="4" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="five" value="5" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="six" value="6" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="sub" value="-" onclick="valueButton(this)"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="one" value="1" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="two" value="2" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="three" value="3" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="add" value="+" onclick="valueButton(this)"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="zero zero" value="00" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="zero" value="0" onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="decimal" value="." onclick="valueButton(this)"/></td>
+                    <td><input type="button" name="equal" value="=" onclick="calculate()"/></td>
+                </tr>
+            </table>
+        </div>
     </div>
+<script>
+    function valueButton(e)
+    {
+        calculatorForm.screen.value += e.value;
+    }
+    function calculate()
+    {
+        calculatorForm.screen.value = eval(calculatorForm.screen.value);
+    }
+</script>
+
 </body>
 </html>
