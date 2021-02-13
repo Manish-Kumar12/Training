@@ -50,8 +50,14 @@ h1
         margin-right: 100px;
     
 }
-#screen
+#right
 {
     background-color:rgb(255, 66, 106);
     border:0;
+}
+p
+{
+    font-size:30px;
+    margin-left: 60px;
+    color:green;
 }
