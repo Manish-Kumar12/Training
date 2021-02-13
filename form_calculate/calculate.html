@@ -1,0 +1,140 @@
+<html>
+<head>    
+    <title>Calculate</title>
+<style>
+body
+{
+ background-color:pink;
+}
+.left
+{
+    background-color: white;
+    width:35%;
+    height:400px;
+    float:left;
+}
+.right
+{
+    background-color:rgb(255, 66, 106);
+    width:35%;
+    height:400px;
+    float:left;
+}
+.box
+{
+    height: 400px;
+    /*width: 100%;*/
+    margin-top: 100px;
+    margin-left: 300px;
+}
+h1
+{
+    font-size: 30px;
+    font-style: normal;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.input
+{
+    border: 0;
+    border-bottom: 2px solid gray;
+    width:100%;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.button
+{  
+        color:black;
+        font-weight: bold;
+        border-radius:5px;
+        border: 0;
+        background-color:rgb(255, 66, 106);
+    
+}
+p
+{
+    font-size:30px;
+    margin-left: 60px;
+    
+}
+</style>
+
+
+
+
+
+<Script Language="JavaScript">
+function add() 
+{
+    var n1=document.getElementById("n1").value;
+    var n2=document.getElementById("n2").value;
+    var x= Number(n1) + Number(n2);
+    //document.getElementById("result").value;
+    document.getElementById("result").innerHTML = x;
+}
+
+function subtract() 
+{
+    var n1=document.getElementById("n1").value;
+    var n2=document.getElementById("n2").value;
+    /*var x;
+    x=(n1-n2);*/
+    var x= Number(n1) - Number(n2);
+    document.getElementById("result").innerHTML = x;
+}
+
+function multiply() 
+{
+    var n1=document.getElementById("n1").value;
+    var n2=document.getElementById("n2").value;
+    var x= Number(n1) * Number(n2);
+    document.getElementById("result").innerHTML = x;
+}
+
+function divide() 
+{
+    var n1=document.getElementById("n1").value;
+    var n2=document.getElementById("n2").value;
+    var x= Number(n1) / Number(n2);
+    document.getElementById("result").innerHTML = x;
+}
+</script>
+
+
+
+
+</head>
+<body>
+    <form name="form" method="get" onsubmit="return calculate()">
+        <div class="box">
+            <div class="left">  
+                <h1>calculate</h1>
+                
+                    <table align="center">
+                        <tr>
+                            <td><input class="input" placeholder="Input a Number" type="number" id="n1">
+                        </tr>
+                        <tr>
+                            <td><input class="input" placeholder="Input a Number" type="number" id="n2">
+                        </tr>                   
+                        <tr><tr></tr><tr></tr>
+                        <tr><td><td><br><br>
+                            <input type="button" value="Addition" onclick="add()">
+                            <input type="button" value="Subtract" onclick="subtract()">
+                            <input type="button" value="Multiply" onclick="multiply()">
+                            <input type="button" value="Divide" onclick="divide()">
+                    </tr>
+                    </table>
+                
+            </div>
+            
+            
+            <div class="right">
+                <h1>Output Screen</h1>
+                <P id="result"></P>
+            </div>
+        </div>
+    </form>
+    <p id="demo"></p>
+</body>
+</html>
