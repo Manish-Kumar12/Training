@@ -2,7 +2,7 @@
     {
         text-align: center;
         background-color: darkgray;
-        height: 400px;
+        height: 600px;
     }
     table
     {
@@ -30,6 +30,7 @@
     
 .btn
 {
-    color:red
-};    
+    color:red;
+    padding: 8px 22px;
+}    
     
