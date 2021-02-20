@@ -1,0 +1,88 @@
+<html>
+<head>    
+<title>Number</title>
+<Script Language="JavaScript">
+function NumCheck()
+{
+    x=document.form.num.value;
+    if(x=="")
+    {
+        alert("Please Enter Number");
+        document.form.num.focus();
+        return false;
+    }
+    if(x % 2 == 0)
+    {
+        alert("Even Number");
+        document.form.num.focus();
+        var a,b;
+        a=2; b=0;
+        while (a<x)
+        {
+            if(x % a ==0)
+            {
+                b=1;
+                break;
+            }
+            a=a+1;
+        }   
+        if(b==0)
+        {
+            alert("Prime Number");
+        }
+        else
+        {
+            alert("Not Prime Number");
+        }
+        return false;
+        
+    }
+    else if (x % 2 != 0)
+    {
+        alert("odd Number");
+        document.form.num.focus();
+        var a,b;
+        a=2; b=0;
+        while (a<x)
+        {
+            if(x % a ==0)
+            {
+                b=1;
+                break;
+            }
+            a=a+1;
+        }   
+        if(b==0)
+        {
+            alert("Prime Number");
+        }
+        else
+        {
+            alert("Not Prime Number");
+        }
+        return false;
+    }
+}
+</script>
+</head>
+<body style="background-color: darkgrey;">
+    <center>
+        <h1 STYLE="color: blueviolet; font-size: 50px;">Number validation</h1>
+    </center>
+    <form name="form" method="get" onsubmit="return NumCheck()">
+    <form>
+        <table align="center">
+            <tr>
+                <td>Number:-
+                <td><input type="text" name="num" size="20" value="">
+            </tr>
+            
+            <tr><tr></tr><tr></tr><tr></tr><tr></tr>
+            <tr><td><td><br><br>
+            <input type="submit" value="Submit">
+            
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

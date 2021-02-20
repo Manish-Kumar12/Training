@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap</title>
+</head>
+<style>
+    body
+    {
+        text-align: center;
+        background-color: blueviolet;
+    }
+    div
+    {
+        border:1px solid orange;
+        margin-top: 200px;
+        margin-left: 450px;
+        background-color: white;
+        width:400px ;
+        height: 200px;
+    }
+</style>
+<body>
+    <div>
+        <h2>Enter The Year</h2>
+        <input type="Number" id="num"><br><br>
+        <input type="button" value="Check" onclick="chk(num.value)">    
+    </div>
+
+<script>
+function chk(year)
+{
+    if ((year % 100 !=0) && (year % 4 == 0) || (year % 400 == 0))
+    {
+        alert("LEAP YEAR");
+    } 
+    else
+    {
+        alert("NOT A LEAP YEAR");
+    }
+}    
+</script>
+
+</body>
+</html>
