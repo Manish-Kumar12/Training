@@ -1,0 +1,36 @@
+body
+{
+    background-color: blueviolet;
+}
+
+.wrapper
+{
+    width:70%;
+    margin:auto;
+    text-align: center;
+}
+
+h1
+{
+    margin: 20px;
+    font-size:80px;
+    color: white;
+}
+
+.dice-area
+{
+    margin: 0px 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+p
+{
+    font-size: 25px;
+    color:black;
+}
+
+img
+{
+    width: 320px;
+}
