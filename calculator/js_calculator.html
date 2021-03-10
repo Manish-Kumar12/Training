@@ -2,64 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <!--<link rel="stylesheet" href="cal.js">-->
     <link rel="stylesheet" href="cal.css">
+    <title>Calculator</title>
 </head>
-
 <body>
-    <div class="container">
-    <form class="calculatorForm" name="calculatorForm">
-        <h1>Calculator</h1>
-        <div class="screen">
-            <input type="text" name="screen" class="screen" value="" readonly/>
+    <div class="center">
+        <div class="Calculater">
+            Calculator
         </div>
-        <div>
-            <table>
-                <tr>
-                    <td><input type="button" name="curly" class="btn" value="(" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="curly" class="btn" value=")" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="clear" class="btn" value="C" onclick="calculatorForm.screen.value='' "/></td>
-                    <td><input type="button" name="divide" class="btn" value="/" onclick="valueButton(this)"/></td>                
-                </tr>
-                <tr>
-                    <td><input type="button" name="seven" class="btn" value="7" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="eight" class="btn" value="8" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="nine" class="btn" value="9" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="mul" class="btn" value="*" onclick="valueButton(this)"/></td>
-                </tr>
-                <tr>
-                    <td><input type="button" name="four" class="btn" value="4" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="five" class="btn" value="5" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="six" class="btn" value="6" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="sub" class="btn" value="-" onclick="valueButton(this)"/></td>
-                </tr>
-                <tr>
-                    <td><input type="button" name="one" class="btn" value="1" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="two" class="btn" value="2" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="three" class="btn" value="3" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="add" class="btn" value="+" onclick="valueButton(this)"/></td>
-                </tr>
-                <tr>
-                    <td><input type="button" name="zero zero" class="btn" value="00" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="zero" class="btn" value="0" onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="decimal" class="btn" value="." onclick="valueButton(this)"/></td>
-                    <td><input type="button" name="equal" class="btn" value="=" onclick="calculate()"/></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-<script>
-    function valueButton(e)
-    {
-        calculatorForm.screen.value += e.value;
-    }
-    function calculate()
-    {
-       calculatorForm.screen.value = eval(calculatorForm.screen.value);
-    }
-</script>
+        <form name="forms">
+            <input type="text" id="display" name="display" disabled>
+            <div class="buttons">
+                <input type="button" id="seven" value="7">
+                <input type="button" id="eight" value="8">
+                <input type="button" id="nine" value="9">
+                <input type="button" id="divide" value="/"><br>
 
+                <input type="button" id="four" value="4">
+                <input type="button" id="five" value="5">
+                <input type="button" id="six" value="6">
+                <input type="button" id="multi" value="*"><br>
+                
+                <input type="button" id="one" value="1">
+                <input type="button" id="two" value="2">
+                <input type="button" id="three" value="3">
+                <input type="button" id="subs" value="-"><br>
+                
+                <input type="button" id="dot" value=".">
+                <input type="button" id="zero" value="0">
+                <input type="button" id="add" value="+">
+                <input type="button" id="clear" value="C"><br>
+                <input type="button" id="equal" onclick="calculator()" value="=">
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="cal.js"></script>
 </body>
 </html>

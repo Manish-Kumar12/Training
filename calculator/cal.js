@@ -1,25 +1,92 @@
-let screen= document.getElementById('screen');
-buttons = document.querySelectorAll('button');
-let screenValue = '';
-for(item of buttons)
+$(document).ready(function()
+{
+    $('#one').click(function()
     {
-        item.addEventListener('click', (e)=>
-        {
-            buttonText = e.target.innerText;
-            console.log('Button text is ', buttonText);
-            if(buttonText == 'C')
-            {
-                screenValue = "";
-                screen.value = screenValue; 
-            }
-            else if (buttonText == '=')
-            {
-                screen.value = eval(screenValue);    
-            }
-            else
-            {
-                screenValue += buttonText;
-                screen.value = screenValue;
-            }
-        })
+        document.forms.display.value += 1;
+    });
+    $('#two').click(function()
+    {
+        document.forms.display.value += 2;
+    });
+    $('#three').click(function()
+    {
+        document.forms.display.value += 3;
+    });
+    $('#four').click(function()
+    {
+        document.forms.display.value += 4;
+    });
+    $('#five').click(function()
+    {
+        document.forms.display.value += 5;
+    });
+    $('#six').click(function()
+    {
+        document.forms.display.value += 6;
+    });
+    $('#seven').click(function()
+    {
+        document.forms.display.value += 7;
+    });
+    $('#eight').click(function()
+    {
+        document.forms.display.value += 8;
+    });
+    $('#nine').click(function()
+    {
+        document.forms.display.value += 9;
+    });
+    $('#zero').click(function()
+    {
+        document.forms.display.value += 0;
+    });
+    $('#add').click(function()
+    {
+        document.forms.display.value += '+';
+    });
+    $('#subs').click(function()
+    {
+        document.forms.display.value += '-';
+    });
+    $('#multi').click(function()
+    {
+        document.forms.display.value += '*';
+    });
+    $('#divide').click(function()
+    {
+        document.forms.display.value += '/';
+    });
+    $('#dot').click(function()
+    {
+        document.forms.display.value += '.';
+    });
+   /* $('#equal').click(function()
+    {
+        document.forms.display.value = eval(document.forms.display.value);
+    });*/
+    $('#clear').click(function()
+    {
+        document.forms.display.value = "";
+    });
+
+    function add(num1, num2) {
+    return num1 + num2;
     }
+     
+    function subtract(num1, num2) {
+    return num1 - num2;
+    }
+     
+    function multiply(num1, num2) {
+    return num1 * num2;
+    }
+     
+    function divide(num1, num2) {
+    return num1 / num2;
+    }
+     
+    function calculator(num1, num2, operator) {
+    return operator(num1, num2);
+    }
+
+})

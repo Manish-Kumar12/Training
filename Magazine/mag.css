@@ -1,0 +1,95 @@
+.container-fluid
+{
+    text-align:center;
+    padding: 4%;
+}
+.container-fluid h1
+{
+    font-size: 70px;
+}
+
+
+.car
+{
+    padding: 4%;
+}
+.three
+{
+    text-align: left;
+    padding: 1.5% 1.5%;
+}
+
+.four
+{
+    text-align: left;
+    padding: 1% 1.5%;
+}
+.threepart
+{
+    text-align: left;
+    padding: 3% 3%;
+}
+.firstrow
+{
+    /*border-bottom:3px solid grey ;*/
+    margin-bottom: 20px;
+}
+
+
+.footer-div
+{
+    text-align: left;
+}
+.footersection
+{
+    background: rgb(52, 52, 52);
+    padding: 4%;
+    color: white;
+}
+.footersection p
+{
+    color:gray;
+}
+
+.thumbnail
+{
+    text-align: left;
+    
+}
+.thumbnail p
+{
+    font-size: 15px;
+}
+.thumbnail h2
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*.nav-item
+{
+    padding-left: 8%;
+}*/
+
+.last h3
+{
+    font-size: 18px;
+}
+.last ul
+{
+    color: gray;
+    font-size: 14px;
+}
+
+.end
+{
+    background: black;
+    padding: 2%;
+}
+.end p
+{
+    text-align: left;
+    color: gray;
+    margin-left: 60px;
+}
