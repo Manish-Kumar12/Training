@@ -60,33 +60,12 @@ $(document).ready(function()
     {
         document.forms.display.value += '.';
     });
-   /* $('#equal').click(function()
+   $('#equal').click(function()
     {
         document.forms.display.value = eval(document.forms.display.value);
-    });*/
+    });
     $('#clear').click(function()
     {
         document.forms.display.value = "";
     });
-
-    function add(num1, num2) {
-    return num1 + num2;
-    }
-     
-    function subtract(num1, num2) {
-    return num1 - num2;
-    }
-     
-    function multiply(num1, num2) {
-    return num1 * num2;
-    }
-     
-    function divide(num1, num2) {
-    return num1 / num2;
-    }
-     
-    function calculator(num1, num2, operator) {
-    return operator(num1, num2);
-    }
-
 })
